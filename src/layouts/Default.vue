@@ -15,8 +15,11 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link
-          :to="`#${item.title.toLowerCase().replace(' &', '-')}`"
+        <v-list-item 
+          v-for="item in items" 
+          :key="item.title" 
+          link
+          :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -42,7 +45,7 @@ export default {
       items: [
         { title: 'About', icon: 'mdi-account-box-outline' },
         { title: 'Projects', icon: 'mdi-apps' },
-        { title: 'Education', icon: 'mdi-school-outline' },
+        { title: 'Education & Expiriance', icon: 'mdi-school-outline' },
         { title: 'Contact', icon: 'mdi-message-text-outline' },
       ],
     }
@@ -59,6 +62,9 @@ query {
 </static-query>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .v-application--wrap {
   flex-direction: row;
 }

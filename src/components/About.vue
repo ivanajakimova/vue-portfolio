@@ -1,5 +1,5 @@
 <template>
-    <section class="d-flex">
+    <section id="about" class="d-flex">
       <v-container>
         <v-row>
           <v-col sm="6">

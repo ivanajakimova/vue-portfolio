@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer width="240px" permanent>
+    <v-navigation-drawer width="240px" permanent fixed>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">
@@ -15,7 +15,9 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item v-for="item in items" :key="item.title" link
+          :to="`#${item.title.toLowerCase().replace(' &', '-')}`"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -33,6 +35,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -61,5 +64,6 @@ query {
 }
 .v-main {
   flex:1 0;
+  margin-left: 240px;
 }
 </style>

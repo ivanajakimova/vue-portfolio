@@ -1,12 +1,15 @@
 {
   "name": "portfolio-app",
   "private": true,
+  "homepage": "https://ivanajakimova.github.io/vue-portfolio",
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "gridsome": "^0.7.0",
     "vuetify": "^2.4.5"
   },

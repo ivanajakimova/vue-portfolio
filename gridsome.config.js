@@ -6,6 +6,6 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  pathPrefix: '/ivanajakimova',
+  pathPrefix: '/vue-portfolio',
   plugins: []
 }

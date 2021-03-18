@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  pathPrefix: '/ivanajakimova',
   plugins: []
 }

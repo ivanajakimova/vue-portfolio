@@ -1,7 +1,6 @@
 {
   "name": "portfolio-app",
   "private": true,
-  "homepage": "https://ivanajakimova.github.io/vue-portfolio",
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
